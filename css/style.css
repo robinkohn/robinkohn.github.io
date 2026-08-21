@@ -186,6 +186,10 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
   font-size: 17px;
 }
 .main-nav .nav-cta:hover { color: var(--white); }
+.main-nav .nav-social {
+  display: flex; align-items: center; gap: 8px;
+}
+.main-nav .nav-social .icon { width: 20px; height: 20px; color: var(--orange); flex-shrink: 0; }
 
 .nav-toggle {
   width: 44px; height: 44px;
@@ -345,6 +349,13 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
 .contact-intro .contact-people { justify-content: center; }
 .contact-person { align-items: center; }
 .contact-person .contact-link { justify-content: center; }
+.contact-social {
+  justify-content: center;
+  margin-top: 24px;
+  font-size: 1.05rem;
+  border: 1px solid rgba(35,39,42,0.12);
+}
+.contact-social .icon { width: 20px; height: 20px; }
 
 /* ==========================================================================
    Footer
@@ -355,6 +366,13 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
 .footer-inner .brand-name { color: var(--charcoal-soft); }
 .footer-meta { font-size: 13px; font-style: normal; }
 .footer-copy { font-size: 12px; }
+.footer-social {
+  display: flex; align-items: center; gap: 8px;
+  font-weight: 600; font-size: 13px; color: var(--charcoal-soft);
+  transition: color .18s var(--ease);
+}
+.footer-social .icon { width: 18px; height: 18px; color: var(--orange); flex-shrink: 0; }
+.footer-social:hover { color: var(--orange-dark); }
 
 /* ==========================================================================
    Lightbox
@@ -420,6 +438,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
     margin-top: 0; margin-left: 8px;
     padding: 10px 20px;
   }
+  .main-nav .nav-social { padding: 10px 12px; }
 
   .hero { padding: 0 48px 96px; align-items: center; }
   .hero-content { max-width: 680px; }
